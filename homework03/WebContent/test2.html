@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <!--<link href="bootstrap3.3.4/css/bootstrap.min.css" rel="stylesheet">-->
+    <!--<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">-->
+    <link rel="stylesheet" type="text/css" href="bootstrap.min.css">
+</head>
+<body>
+
+<input id="after" class="form-control" readonly onchange=alert($("#after").val()) type="number" value="3" min="0"  />
+</body>
+
+<!--<script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.12.4.min.js" ></script>-->
+<script src="jquery-1.9.1.min.js" ></script>
+<!--<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" ></script>-->
+<script src="bootstrap.min.js" ></script>
+<script src="bootstrap-number-input.js" ></script>
+<script>
+
+    $('#after').bootstrapNumber();
+    $('#before').onchange=function () {
+        alert(this.value);
+    };
+
+    function test() {
+        alert(123);
+    }
+
+</script>
