@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>图书管理系统</title>
+    <link href="bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+<script type="text/javascript">
+
+    function editSubmit(index) {
+
+        var table = document.getElementById("tableBookInfos");      //表格对象
+
+//  获取表格元素
+        var bookName = $("form #bookName").val();
+        var location = $("input:radio[name='location']:checked").val();
+        var producer = $("select[name='dropList']").val();
+        var categories = [];//定义一个书籍分类数组
+        var count = 0;
+        $('input[name="categories"]:checked').each(function () {
+            count++;
+            categories.push($(this).val());
+        });
+
+        if (count == 0) {
+            alert("请为图书选择至少一种类别");
+            return;
+        }
+
+        table.deleteRow(index);
+        var newRow = table.insertRow(index);
+        var col1 = newRow.insertCell(0);
+        var col2 = newRow.insertCell(1);
+        var col3 = newRow.insertCell(2);
+        var col4 = newRow.insertCell(3);
+        var col5 = newRow.insertCell(4);
+        col1.innerHTML = bookName;
+        col2.innerHTML = location;
+        col3.innerHTML = producer;
+        col4.innerHTML = categories;
+        col5.innerHTML = '<a onclick="editRow(this)">修改</a> <a onclick="deleteRow(this)">删除</a>';
+
+//        为了避免重复编辑问题，在一次编辑完成后，重新把提交按钮绑定的JS修改为增添新的一行
+        document.getElementById("submit_button").onclick = function () {
+            warn();
+        };
+    }
+
+    1
+
+    function editRow(obj) {
+        /*
+        首先清空表单
+        将需要编辑的行号index记录下来
+        根据index获取行中的数值并赋值给表单
+        删除index行，并将表单编辑的结果插入index行
+        * */
+        $("#reset").click();
+
+        var index = obj.parentNode.parentNode.rowIndex;
+        console.log('index: ' + obj.parentNode.parentNode);
+        console.log(obj.parentNode.parentNode.rowIndex);
+        var table = document.getElementById("tableBookInfos");      //表格对象
+        var col1 = table.rows[index].cells[0].innerHTML;
+        var col2 = table.rows[index].cells[1].innerHTML;
+        var col3 = table.rows[index].cells[2].innerHTML;
+        var col4 = table.rows[index].cells[3].innerHTML;
+        //        获取表格元素
+        var table = document.getElementById("tableBookInfos");      //表格对象
+        $("form #bookName").val(col1);
+//        下拉框赋值
+        $('#' + col2).prop("checked", true);
+        $('#' + col3).prop('selected', true);
+//        复选框赋值
+        var arr_Categories = col4.split(',');
+        for (var i in arr_Categories) {
+            console.log(arr_Categories[i]);
+            $('#' + arr_Categories[i]).prop("checked", true);
+        }
+
+//    动态修改提交按键绑定函数的参数，即所要编辑的行数
+        document.getElementById("submit_button").onclick = function () {
+            editSubmit(index);
+        }
+    }
+
+    function deleteRow(obj) {
+        //获取待删除的行数
+        var index = obj.parentNode.parentNode.rowIndex;
+        //        获取表格元素
+        var table = document.getElementById("tableBookInfos");      //表格对象
+//        删除行
+        table.deleteRow(index);
+    }
+
+    function fill(index) {
+
+        /*
+        将form隐藏，把里面的元素给添加进入table中
+        */
+//        获取表格元素
+        var table = document.getElementById("tableBookInfos");      //表格对象
+        var bookName = $("form #bookName").val();
+        var location = $("input:radio[name='location']:checked").val();
+        var producer = $("select[name='dropList']").val();
+        var categories = [];//定义一个书籍分类数组
+        var count = 0;
+        $('input[name="categories"]:checked').each(function () {
+            count++;
+            categories.push($(this).val());
+        });
+
+        if (count == 0) {
+            alert("请为图书选择至少一种类别");
+            return;
+        }
+
+        if (index == undefined)
+            var newRow = table.insertRow();
+        else
+            var newRow = table.insertRow(index);
+        var col1 = newRow.insertCell(0);
+        var col2 = newRow.insertCell(1);
+        var col3 = newRow.insertCell(2);
+        var col4 = newRow.insertCell(3);
+        var col5 = newRow.insertCell(4);
+        col1.innerHTML = bookName;
+        col2.innerHTML = location;
+        col3.innerHTML = producer;
+        col4.innerHTML = categories;
+        col5.innerHTML = '<a onclick="editRow(this)">修改</a> <a onclick="deleteRow(this)">删除</a>';
+
+//        为保证数据操作的安全性，当提交按钮点击过后将绑定的JS函数清除
+        document.getElementById("submit_button").onclick = function () {
+            warn();
+        };
+
+
+    }
+
+    function search() {
+        /*
+        每次查找前需要将上一次隐藏的元素全部显示再重新查找
+        按照名字查找
+        获取到查找框中的元素 str
+        创建正则表达式 *str*
+        遍历table,如果符合正则表达式，则不变，否则，隐藏该行
+         */
+        var table = document.getElementById("tableBookInfos");      //表格对象
+        var length = table.rows.length;
+        console.log('表格共有', length, '行')
+
+//        将表格元素全部显示
+        for (var index = 1; index < length; index++) {
+            table.rows[index].style.display = '';
+        }
+
+//        通过正则表达式对象处理搜索问题
+        var str = $("#searchByName").val();
+        var re = new RegExp(str);
+
+//        遍历table，如果某一行不符合正则表达式，则将其隐藏
+        for (var index = 1; index < length; index++) {
+            if (table.rows[index].cells[0].innerHTML.search(re) == -1) {
+                table.rows[index].style.display = 'none';
+            }
+        }
+
+    }
+
+    function addNew() {
+        $('#reset').click();
+        document.getElementById("submit_button").onclick = function () {
+            fill();
+        }
+    }
+
+    function checkBookName() {
+        var bookName = $('#bookName').val();
+        if (bookName == null || bookName.trim() == "") {
+            $("#lblWarn_bookName").html("图书名称不能为空!");
+            $("#bookName").focus();
+        }
+        else
+            document.getElementById("lblWarn_bookName").innerText = "";
+    }
+
+    function warn() {
+        alert("请明确你要执行的操作，在选择新增图书或者修改按键后方能编辑提交");
+    }
+
+</script>
+<!--查找函数-->
+
+<div class="col-md-3 col-md-offset-2">
+    <div class="input-group">
+      <span class="input-group-btn">
+        <button class="btn btn-info" type="button" onclick="search()">搜索</button>
+      </span>
+        <input type="text" id="searchByName" class="form-control" placeholder="输入要搜索的图书名">
+    </div><!-- /input-group -->
+</div>
+
+
+<div class="container">
+    <table id="tableBookInfos" class="table table-bordered table-hover">
+        <caption>图书列表</caption>
+        <thead>
+        <tr>
+            <th>图书名称</th>
+            <th>图书馆</th>
+            <th>出版社</th>
+            <th>图书分类</th>
+            <th>操作</th>
+        </tr>
+        </thead>
+    </table>
+</div>
+
+<div class="col-sm-offset-10">
+    <button id="newForm" onclick="addNew();" class="btn btn-info">新增图书</button>
+</div>
+<h1>图书信息</h1>
+<hr/>
+<form role="form">
+    <div class="form-group">
+        <label>图书名称：</label>
+        <br>
+        <div class="col-md-2">
+            <input type="text" id="bookName" class="form-control" onblur="checkBookName();" placeholder="图书名称">
+        </div>
+        <label id="lblWarn_bookName"></label>
+    </div>
+    <div class="form-group">
+        <label>分馆：</label>
+        <br>
+        <input type="radio" name="location" id="馆一" value="馆一" checked="true"/>馆一
+        <input type="radio" name="location" id="馆二" value="馆二"/>馆二
+    </div>
+    <div class="form-group">
+        <label>图书分类：</label>
+        <br>
+        <input type="checkbox" name="categories" id="小说" value="小说"/>小说
+        <input type="checkbox" name="categories" id="文艺" value="文艺"/>文艺
+        <input type="checkbox" name="categories" id="青春" value="青春"/>青春
+        <input type="checkbox" name="categories" id="教育" value="教育"/>教育
+        <input type="checkbox" name="categories" id="生活" value="生活"/>生活
+        <input type="checkbox" name="categories" id="经管" value="经管"/>经管
+        <input type="checkbox" name="categories" id="科技" value="科技"/>科技
+    </div>
+    <div class="form-group">
+        出版社：
+        <br>
+        <!--出版社下拉框-->
+        <select name="dropList">
+            <option id="清华大学出版社" value="清华大学出版社">清华大学出版社</option>
+            <option id="机械工业出版社" value="机械工业出版社">机械工业出版社</option>
+        </select>
+    </div>
+    <!--<div class="form-control">-->
+    <label>简介：</label>
+    <br>
+    <textarea rows="10" cols="100" id="description">这是一本书。
+    </textarea>
+    <br>
+    <div class="container">
+        <input type="reset" id="reset" class="btn btn-info" value="重置">
+    </div>
+</form>
+<div class="container">
+    <button onclick="warn()" id="submit_button" class="btn btn-info">提交</button>
+</div>
+<script src="jquery-1.9.1.min.js"></script>
+<script src="bootstrap.min.js"></script>
+</body>
+</html>

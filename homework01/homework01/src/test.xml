@@ -1,0 +1,1649 @@
+ClassInfo:
+<object-stream>
+  <homework01.po.ClassInfo>
+    <classId>21</classId>
+    <className>java.lang.String</className>
+  </homework01.po.ClassInfo>
+</object-stream>
+MethodInfo:
+<object-stream>
+  <homework01.po.MethodInfo>
+    <methodId>620</methodId>
+    <classId>21</classId>
+    <methodName>equals</methodName>
+    <returnType>boolean</returnType>
+  </homework01.po.MethodInfo>
+</object-stream>
+<object-stream>
+  <homework01.po.MethodInfo>
+    <methodId>621</methodId>
+    <classId>21</classId>
+    <methodName>toString</methodName>
+    <returnType>java.lang.String</returnType>
+  </homework01.po.MethodInfo>
+</object-stream>
+<object-stream>
+  <homework01.po.MethodInfo>
+    <methodId>622</methodId>
+    <classId>21</classId>
+    <methodName>hashCode</methodName>
+    <returnType>int</returnType>
+  </homework01.po.MethodInfo>
+</object-stream>
+<object-stream>
+  <homework01.po.MethodInfo>
+    <methodId>623</methodId>
+    <classId>21</classId>
+    <methodName>compareTo</methodName>
+    <returnType>int</returnType>
+  </homework01.po.MethodInfo>
+</object-stream>
+<object-stream>
+  <homework01.po.MethodInfo>
+    <methodId>624</methodId>
+    <classId>21</classId>
+    <methodName>compareTo</methodName>
+    <returnType>int</returnType>
+  </homework01.po.MethodInfo>
+</object-stream>
+<object-stream>
+  <homework01.po.MethodInfo>
+    <methodId>625</methodId>
+    <classId>21</classId>
+    <methodName>indexOf</methodName>
+    <returnType>int</returnType>
+  </homework01.po.MethodInfo>
+</object-stream>
+<object-stream>
+  <homework01.po.MethodInfo>
+    <methodId>626</methodId>
+    <classId>21</classId>
+    <methodName>indexOf</methodName>
+    <returnType>int</returnType>
+  </homework01.po.MethodInfo>
+</object-stream>
+<object-stream>
+  <homework01.po.MethodInfo>
+    <methodId>627</methodId>
+    <classId>21</classId>
+    <methodName>indexOf</methodName>
+    <returnType>int</returnType>
+  </homework01.po.MethodInfo>
+</object-stream>
+<object-stream>
+  <homework01.po.MethodInfo>
+    <methodId>628</methodId>
+    <classId>21</classId>
+    <methodName>indexOf</methodName>
+    <returnType>int</returnType>
+  </homework01.po.MethodInfo>
+</object-stream>
+<object-stream>
+  <homework01.po.MethodInfo>
+    <methodId>629</methodId>
+    <classId>21</classId>
+    <methodName>indexOf</methodName>
+    <returnType>int</returnType>
+  </homework01.po.MethodInfo>
+</object-stream>
+<object-stream>
+  <homework01.po.MethodInfo>
+    <methodId>630</methodId>
+    <classId>21</classId>
+    <methodName>indexOf</methodName>
+    <returnType>int</returnType>
+  </homework01.po.MethodInfo>
+</object-stream>
+<object-stream>
+  <homework01.po.MethodInfo>
+    <methodId>631</methodId>
+    <classId>21</classId>
+    <methodName>valueOf</methodName>
+    <returnType>java.lang.String</returnType>
+  </homework01.po.MethodInfo>
+</object-stream>
+<object-stream>
+  <homework01.po.MethodInfo>
+    <methodId>632</methodId>
+    <classId>21</classId>
+    <methodName>valueOf</methodName>
+    <returnType>java.lang.String</returnType>
+  </homework01.po.MethodInfo>
+</object-stream>
+<object-stream>
+  <homework01.po.MethodInfo>
+    <methodId>633</methodId>
+    <classId>21</classId>
+    <methodName>valueOf</methodName>
+    <returnType>java.lang.String</returnType>
+  </homework01.po.MethodInfo>
+</object-stream>
+<object-stream>
+  <homework01.po.MethodInfo>
+    <methodId>634</methodId>
+    <classId>21</classId>
+    <methodName>valueOf</methodName>
+    <returnType>java.lang.String</returnType>
+  </homework01.po.MethodInfo>
+</object-stream>
+<object-stream>
+  <homework01.po.MethodInfo>
+    <methodId>635</methodId>
+    <classId>21</classId>
+    <methodName>valueOf</methodName>
+    <returnType>java.lang.String</returnType>
+  </homework01.po.MethodInfo>
+</object-stream>
+<object-stream>
+  <homework01.po.MethodInfo>
+    <methodId>636</methodId>
+    <classId>21</classId>
+    <methodName>valueOf</methodName>
+    <returnType>java.lang.String</returnType>
+  </homework01.po.MethodInfo>
+</object-stream>
+<object-stream>
+  <homework01.po.MethodInfo>
+    <methodId>637</methodId>
+    <classId>21</classId>
+    <methodName>valueOf</methodName>
+    <returnType>java.lang.String</returnType>
+  </homework01.po.MethodInfo>
+</object-stream>
+<object-stream>
+  <homework01.po.MethodInfo>
+    <methodId>638</methodId>
+    <classId>21</classId>
+    <methodName>valueOf</methodName>
+    <returnType>java.lang.String</returnType>
+  </homework01.po.MethodInfo>
+</object-stream>
+<object-stream>
+  <homework01.po.MethodInfo>
+    <methodId>639</methodId>
+    <classId>21</classId>
+    <methodName>valueOf</methodName>
+    <returnType>java.lang.String</returnType>
+  </homework01.po.MethodInfo>
+</object-stream>
+<object-stream>
+  <homework01.po.MethodInfo>
+    <methodId>640</methodId>
+    <classId>21</classId>
+    <methodName>charAt</methodName>
+    <returnType>char</returnType>
+  </homework01.po.MethodInfo>
+</object-stream>
+<object-stream>
+  <homework01.po.MethodInfo>
+    <methodId>641</methodId>
+    <classId>21</classId>
+    <methodName>checkBounds</methodName>
+    <returnType>void</returnType>
+  </homework01.po.MethodInfo>
+</object-stream>
+<object-stream>
+  <homework01.po.MethodInfo>
+    <methodId>642</methodId>
+    <classId>21</classId>
+    <methodName>codePointAt</methodName>
+    <returnType>int</returnType>
+  </homework01.po.MethodInfo>
+</object-stream>
+<object-stream>
+  <homework01.po.MethodInfo>
+    <methodId>643</methodId>
+    <classId>21</classId>
+    <methodName>codePointBefore</methodName>
+    <returnType>int</returnType>
+  </homework01.po.MethodInfo>
+</object-stream>
+<object-stream>
+  <homework01.po.MethodInfo>
+    <methodId>644</methodId>
+    <classId>21</classId>
+    <methodName>codePointCount</methodName>
+    <returnType>int</returnType>
+  </homework01.po.MethodInfo>
+</object-stream>
+<object-stream>
+  <homework01.po.MethodInfo>
+    <methodId>645</methodId>
+    <classId>21</classId>
+    <methodName>compareToIgnoreCase</methodName>
+    <returnType>int</returnType>
+  </homework01.po.MethodInfo>
+</object-stream>
+<object-stream>
+  <homework01.po.MethodInfo>
+    <methodId>646</methodId>
+    <classId>21</classId>
+    <methodName>concat</methodName>
+    <returnType>java.lang.String</returnType>
+  </homework01.po.MethodInfo>
+</object-stream>
+<object-stream>
+  <homework01.po.MethodInfo>
+    <methodId>647</methodId>
+    <classId>21</classId>
+    <methodName>contains</methodName>
+    <returnType>boolean</returnType>
+  </homework01.po.MethodInfo>
+</object-stream>
+<object-stream>
+  <homework01.po.MethodInfo>
+    <methodId>648</methodId>
+    <classId>21</classId>
+    <methodName>contentEquals</methodName>
+    <returnType>boolean</returnType>
+  </homework01.po.MethodInfo>
+</object-stream>
+<object-stream>
+  <homework01.po.MethodInfo>
+    <methodId>649</methodId>
+    <classId>21</classId>
+    <methodName>contentEquals</methodName>
+    <returnType>boolean</returnType>
+  </homework01.po.MethodInfo>
+</object-stream>
+<object-stream>
+  <homework01.po.MethodInfo>
+    <methodId>650</methodId>
+    <classId>21</classId>
+    <methodName>copyValueOf</methodName>
+    <returnType>java.lang.String</returnType>
+  </homework01.po.MethodInfo>
+</object-stream>
+<object-stream>
+  <homework01.po.MethodInfo>
+    <methodId>651</methodId>
+    <classId>21</classId>
+    <methodName>copyValueOf</methodName>
+    <returnType>java.lang.String</returnType>
+  </homework01.po.MethodInfo>
+</object-stream>
+<object-stream>
+  <homework01.po.MethodInfo>
+    <methodId>652</methodId>
+    <classId>21</classId>
+    <methodName>endsWith</methodName>
+    <returnType>boolean</returnType>
+  </homework01.po.MethodInfo>
+</object-stream>
+<object-stream>
+  <homework01.po.MethodInfo>
+    <methodId>653</methodId>
+    <classId>21</classId>
+    <methodName>equalsIgnoreCase</methodName>
+    <returnType>boolean</returnType>
+  </homework01.po.MethodInfo>
+</object-stream>
+<object-stream>
+  <homework01.po.MethodInfo>
+    <methodId>654</methodId>
+    <classId>21</classId>
+    <methodName>format</methodName>
+    <returnType>java.lang.String</returnType>
+  </homework01.po.MethodInfo>
+</object-stream>
+<object-stream>
+  <homework01.po.MethodInfo>
+    <methodId>655</methodId>
+    <classId>21</classId>
+    <methodName>format</methodName>
+    <returnType>java.lang.String</returnType>
+  </homework01.po.MethodInfo>
+</object-stream>
+<object-stream>
+  <homework01.po.MethodInfo>
+    <methodId>656</methodId>
+    <classId>21</classId>
+    <methodName>getBytes</methodName>
+    <returnType>void</returnType>
+  </homework01.po.MethodInfo>
+</object-stream>
+<object-stream>
+  <homework01.po.MethodInfo>
+    <methodId>657</methodId>
+    <classId>21</classId>
+    <methodName>getBytes</methodName>
+    <returnType>[B</returnType>
+  </homework01.po.MethodInfo>
+</object-stream>
+<object-stream>
+  <homework01.po.MethodInfo>
+    <methodId>658</methodId>
+    <classId>21</classId>
+    <methodName>getBytes</methodName>
+    <returnType>[B</returnType>
+  </homework01.po.MethodInfo>
+</object-stream>
+<object-stream>
+  <homework01.po.MethodInfo>
+    <methodId>659</methodId>
+    <classId>21</classId>
+    <methodName>getBytes</methodName>
+    <returnType>[B</returnType>
+  </homework01.po.MethodInfo>
+</object-stream>
+<object-stream>
+  <homework01.po.MethodInfo>
+    <methodId>660</methodId>
+    <classId>21</classId>
+    <methodName>getChars</methodName>
+    <returnType>void</returnType>
+  </homework01.po.MethodInfo>
+</object-stream>
+<object-stream>
+  <homework01.po.MethodInfo>
+    <methodId>661</methodId>
+    <classId>21</classId>
+    <methodName>getChars</methodName>
+    <returnType>void</returnType>
+  </homework01.po.MethodInfo>
+</object-stream>
+<object-stream>
+  <homework01.po.MethodInfo>
+    <methodId>662</methodId>
+    <classId>21</classId>
+    <methodName>indexOfSupplementary</methodName>
+    <returnType>int</returnType>
+  </homework01.po.MethodInfo>
+</object-stream>
+<object-stream>
+  <homework01.po.MethodInfo>
+    <methodId>663</methodId>
+    <classId>21</classId>
+    <methodName>intern</methodName>
+    <returnType>java.lang.String</returnType>
+  </homework01.po.MethodInfo>
+</object-stream>
+<object-stream>
+  <homework01.po.MethodInfo>
+    <methodId>664</methodId>
+    <classId>21</classId>
+    <methodName>isEmpty</methodName>
+    <returnType>boolean</returnType>
+  </homework01.po.MethodInfo>
+</object-stream>
+<object-stream>
+  <homework01.po.MethodInfo>
+    <methodId>665</methodId>
+    <classId>21</classId>
+    <methodName>join</methodName>
+    <returnType>java.lang.String</returnType>
+  </homework01.po.MethodInfo>
+</object-stream>
+<object-stream>
+  <homework01.po.MethodInfo>
+    <methodId>666</methodId>
+    <classId>21</classId>
+    <methodName>join</methodName>
+    <returnType>java.lang.String</returnType>
+  </homework01.po.MethodInfo>
+</object-stream>
+<object-stream>
+  <homework01.po.MethodInfo>
+    <methodId>667</methodId>
+    <classId>21</classId>
+    <methodName>lastIndexOf</methodName>
+    <returnType>int</returnType>
+  </homework01.po.MethodInfo>
+</object-stream>
+<object-stream>
+  <homework01.po.MethodInfo>
+    <methodId>668</methodId>
+    <classId>21</classId>
+    <methodName>lastIndexOf</methodName>
+    <returnType>int</returnType>
+  </homework01.po.MethodInfo>
+</object-stream>
+<object-stream>
+  <homework01.po.MethodInfo>
+    <methodId>669</methodId>
+    <classId>21</classId>
+    <methodName>lastIndexOf</methodName>
+    <returnType>int</returnType>
+  </homework01.po.MethodInfo>
+</object-stream>
+<object-stream>
+  <homework01.po.MethodInfo>
+    <methodId>670</methodId>
+    <classId>21</classId>
+    <methodName>lastIndexOf</methodName>
+    <returnType>int</returnType>
+  </homework01.po.MethodInfo>
+</object-stream>
+<object-stream>
+  <homework01.po.MethodInfo>
+    <methodId>671</methodId>
+    <classId>21</classId>
+    <methodName>lastIndexOf</methodName>
+    <returnType>int</returnType>
+  </homework01.po.MethodInfo>
+</object-stream>
+<object-stream>
+  <homework01.po.MethodInfo>
+    <methodId>672</methodId>
+    <classId>21</classId>
+    <methodName>lastIndexOf</methodName>
+    <returnType>int</returnType>
+  </homework01.po.MethodInfo>
+</object-stream>
+<object-stream>
+  <homework01.po.MethodInfo>
+    <methodId>673</methodId>
+    <classId>21</classId>
+    <methodName>lastIndexOfSupplementary</methodName>
+    <returnType>int</returnType>
+  </homework01.po.MethodInfo>
+</object-stream>
+<object-stream>
+  <homework01.po.MethodInfo>
+    <methodId>674</methodId>
+    <classId>21</classId>
+    <methodName>length</methodName>
+    <returnType>int</returnType>
+  </homework01.po.MethodInfo>
+</object-stream>
+<object-stream>
+  <homework01.po.MethodInfo>
+    <methodId>675</methodId>
+    <classId>21</classId>
+    <methodName>matches</methodName>
+    <returnType>boolean</returnType>
+  </homework01.po.MethodInfo>
+</object-stream>
+<object-stream>
+  <homework01.po.MethodInfo>
+    <methodId>676</methodId>
+    <classId>21</classId>
+    <methodName>nonSyncContentEquals</methodName>
+    <returnType>boolean</returnType>
+  </homework01.po.MethodInfo>
+</object-stream>
+<object-stream>
+  <homework01.po.MethodInfo>
+    <methodId>677</methodId>
+    <classId>21</classId>
+    <methodName>offsetByCodePoints</methodName>
+    <returnType>int</returnType>
+  </homework01.po.MethodInfo>
+</object-stream>
+<object-stream>
+  <homework01.po.MethodInfo>
+    <methodId>678</methodId>
+    <classId>21</classId>
+    <methodName>regionMatches</methodName>
+    <returnType>boolean</returnType>
+  </homework01.po.MethodInfo>
+</object-stream>
+<object-stream>
+  <homework01.po.MethodInfo>
+    <methodId>679</methodId>
+    <classId>21</classId>
+    <methodName>regionMatches</methodName>
+    <returnType>boolean</returnType>
+  </homework01.po.MethodInfo>
+</object-stream>
+<object-stream>
+  <homework01.po.MethodInfo>
+    <methodId>680</methodId>
+    <classId>21</classId>
+    <methodName>replace</methodName>
+    <returnType>java.lang.String</returnType>
+  </homework01.po.MethodInfo>
+</object-stream>
+<object-stream>
+  <homework01.po.MethodInfo>
+    <methodId>681</methodId>
+    <classId>21</classId>
+    <methodName>replace</methodName>
+    <returnType>java.lang.String</returnType>
+  </homework01.po.MethodInfo>
+</object-stream>
+<object-stream>
+  <homework01.po.MethodInfo>
+    <methodId>682</methodId>
+    <classId>21</classId>
+    <methodName>replaceAll</methodName>
+    <returnType>java.lang.String</returnType>
+  </homework01.po.MethodInfo>
+</object-stream>
+<object-stream>
+  <homework01.po.MethodInfo>
+    <methodId>683</methodId>
+    <classId>21</classId>
+    <methodName>replaceFirst</methodName>
+    <returnType>java.lang.String</returnType>
+  </homework01.po.MethodInfo>
+</object-stream>
+<object-stream>
+  <homework01.po.MethodInfo>
+    <methodId>684</methodId>
+    <classId>21</classId>
+    <methodName>split</methodName>
+    <returnType>[Ljava.lang.String;</returnType>
+  </homework01.po.MethodInfo>
+</object-stream>
+<object-stream>
+  <homework01.po.MethodInfo>
+    <methodId>685</methodId>
+    <classId>21</classId>
+    <methodName>split</methodName>
+    <returnType>[Ljava.lang.String;</returnType>
+  </homework01.po.MethodInfo>
+</object-stream>
+<object-stream>
+  <homework01.po.MethodInfo>
+    <methodId>686</methodId>
+    <classId>21</classId>
+    <methodName>startsWith</methodName>
+    <returnType>boolean</returnType>
+  </homework01.po.MethodInfo>
+</object-stream>
+<object-stream>
+  <homework01.po.MethodInfo>
+    <methodId>687</methodId>
+    <classId>21</classId>
+    <methodName>startsWith</methodName>
+    <returnType>boolean</returnType>
+  </homework01.po.MethodInfo>
+</object-stream>
+<object-stream>
+  <homework01.po.MethodInfo>
+    <methodId>688</methodId>
+    <classId>21</classId>
+    <methodName>subSequence</methodName>
+    <returnType>java.lang.CharSequence</returnType>
+  </homework01.po.MethodInfo>
+</object-stream>
+<object-stream>
+  <homework01.po.MethodInfo>
+    <methodId>689</methodId>
+    <classId>21</classId>
+    <methodName>substring</methodName>
+    <returnType>java.lang.String</returnType>
+  </homework01.po.MethodInfo>
+</object-stream>
+<object-stream>
+  <homework01.po.MethodInfo>
+    <methodId>690</methodId>
+    <classId>21</classId>
+    <methodName>substring</methodName>
+    <returnType>java.lang.String</returnType>
+  </homework01.po.MethodInfo>
+</object-stream>
+<object-stream>
+  <homework01.po.MethodInfo>
+    <methodId>691</methodId>
+    <classId>21</classId>
+    <methodName>toCharArray</methodName>
+    <returnType>[C</returnType>
+  </homework01.po.MethodInfo>
+</object-stream>
+<object-stream>
+  <homework01.po.MethodInfo>
+    <methodId>692</methodId>
+    <classId>21</classId>
+    <methodName>toLowerCase</methodName>
+    <returnType>java.lang.String</returnType>
+  </homework01.po.MethodInfo>
+</object-stream>
+<object-stream>
+  <homework01.po.MethodInfo>
+    <methodId>693</methodId>
+    <classId>21</classId>
+    <methodName>toLowerCase</methodName>
+    <returnType>java.lang.String</returnType>
+  </homework01.po.MethodInfo>
+</object-stream>
+<object-stream>
+  <homework01.po.MethodInfo>
+    <methodId>694</methodId>
+    <classId>21</classId>
+    <methodName>toUpperCase</methodName>
+    <returnType>java.lang.String</returnType>
+  </homework01.po.MethodInfo>
+</object-stream>
+<object-stream>
+  <homework01.po.MethodInfo>
+    <methodId>695</methodId>
+    <classId>21</classId>
+    <methodName>toUpperCase</methodName>
+    <returnType>java.lang.String</returnType>
+  </homework01.po.MethodInfo>
+</object-stream>
+<object-stream>
+  <homework01.po.MethodInfo>
+    <methodId>696</methodId>
+    <classId>21</classId>
+    <methodName>trim</methodName>
+    <returnType>java.lang.String</returnType>
+  </homework01.po.MethodInfo>
+</object-stream>
+ParamInfo:
+<object-stream>
+  <homework01.po.ParamInfo>
+    <paramId>897</paramId>
+    <methodId>620</methodId>
+    <paramName>arg[0]</paramName>
+    <paramType>java.lang.Object</paramType>
+  </homework01.po.ParamInfo>
+</object-stream>
+<object-stream>
+  <homework01.po.ParamInfo>
+    <paramId>898</paramId>
+    <methodId>623</methodId>
+    <paramName>arg[0]</paramName>
+    <paramType>java.lang.String</paramType>
+  </homework01.po.ParamInfo>
+</object-stream>
+<object-stream>
+  <homework01.po.ParamInfo>
+    <paramId>899</paramId>
+    <methodId>624</methodId>
+    <paramName>arg[0]</paramName>
+    <paramType>java.lang.Object</paramType>
+  </homework01.po.ParamInfo>
+</object-stream>
+<object-stream>
+  <homework01.po.ParamInfo>
+    <paramId>900</paramId>
+    <methodId>625</methodId>
+    <paramName>arg[0]</paramName>
+    <paramType>java.lang.String</paramType>
+  </homework01.po.ParamInfo>
+</object-stream>
+<object-stream>
+  <homework01.po.ParamInfo>
+    <paramId>901</paramId>
+    <methodId>625</methodId>
+    <paramName>arg[1]</paramName>
+    <paramType>int</paramType>
+  </homework01.po.ParamInfo>
+</object-stream>
+<object-stream>
+  <homework01.po.ParamInfo>
+    <paramId>902</paramId>
+    <methodId>626</methodId>
+    <paramName>arg[0]</paramName>
+    <paramType>java.lang.String</paramType>
+  </homework01.po.ParamInfo>
+</object-stream>
+<object-stream>
+  <homework01.po.ParamInfo>
+    <paramId>903</paramId>
+    <methodId>627</methodId>
+    <paramName>arg[0]</paramName>
+    <paramType>int</paramType>
+  </homework01.po.ParamInfo>
+</object-stream>
+<object-stream>
+  <homework01.po.ParamInfo>
+    <paramId>904</paramId>
+    <methodId>627</methodId>
+    <paramName>arg[1]</paramName>
+    <paramType>int</paramType>
+  </homework01.po.ParamInfo>
+</object-stream>
+<object-stream>
+  <homework01.po.ParamInfo>
+    <paramId>905</paramId>
+    <methodId>628</methodId>
+    <paramName>arg[0]</paramName>
+    <paramType>int</paramType>
+  </homework01.po.ParamInfo>
+</object-stream>
+<object-stream>
+  <homework01.po.ParamInfo>
+    <paramId>906</paramId>
+    <methodId>629</methodId>
+    <paramName>arg[0]</paramName>
+    <paramType>char[]</paramType>
+  </homework01.po.ParamInfo>
+</object-stream>
+<object-stream>
+  <homework01.po.ParamInfo>
+    <paramId>907</paramId>
+    <methodId>629</methodId>
+    <paramName>arg[1]</paramName>
+    <paramType>int</paramType>
+  </homework01.po.ParamInfo>
+</object-stream>
+<object-stream>
+  <homework01.po.ParamInfo>
+    <paramId>908</paramId>
+    <methodId>629</methodId>
+    <paramName>arg[2]</paramName>
+    <paramType>int</paramType>
+  </homework01.po.ParamInfo>
+</object-stream>
+<object-stream>
+  <homework01.po.ParamInfo>
+    <paramId>909</paramId>
+    <methodId>629</methodId>
+    <paramName>arg[3]</paramName>
+    <paramType>char[]</paramType>
+  </homework01.po.ParamInfo>
+</object-stream>
+<object-stream>
+  <homework01.po.ParamInfo>
+    <paramId>910</paramId>
+    <methodId>629</methodId>
+    <paramName>arg[4]</paramName>
+    <paramType>int</paramType>
+  </homework01.po.ParamInfo>
+</object-stream>
+<object-stream>
+  <homework01.po.ParamInfo>
+    <paramId>911</paramId>
+    <methodId>629</methodId>
+    <paramName>arg[5]</paramName>
+    <paramType>int</paramType>
+  </homework01.po.ParamInfo>
+</object-stream>
+<object-stream>
+  <homework01.po.ParamInfo>
+    <paramId>912</paramId>
+    <methodId>629</methodId>
+    <paramName>arg[6]</paramName>
+    <paramType>int</paramType>
+  </homework01.po.ParamInfo>
+</object-stream>
+<object-stream>
+  <homework01.po.ParamInfo>
+    <paramId>913</paramId>
+    <methodId>630</methodId>
+    <paramName>arg[0]</paramName>
+    <paramType>char[]</paramType>
+  </homework01.po.ParamInfo>
+</object-stream>
+<object-stream>
+  <homework01.po.ParamInfo>
+    <paramId>914</paramId>
+    <methodId>630</methodId>
+    <paramName>arg[1]</paramName>
+    <paramType>int</paramType>
+  </homework01.po.ParamInfo>
+</object-stream>
+<object-stream>
+  <homework01.po.ParamInfo>
+    <paramId>915</paramId>
+    <methodId>630</methodId>
+    <paramName>arg[2]</paramName>
+    <paramType>int</paramType>
+  </homework01.po.ParamInfo>
+</object-stream>
+<object-stream>
+  <homework01.po.ParamInfo>
+    <paramId>916</paramId>
+    <methodId>630</methodId>
+    <paramName>arg[3]</paramName>
+    <paramType>java.lang.String</paramType>
+  </homework01.po.ParamInfo>
+</object-stream>
+<object-stream>
+  <homework01.po.ParamInfo>
+    <paramId>917</paramId>
+    <methodId>630</methodId>
+    <paramName>arg[4]</paramName>
+    <paramType>int</paramType>
+  </homework01.po.ParamInfo>
+</object-stream>
+<object-stream>
+  <homework01.po.ParamInfo>
+    <paramId>918</paramId>
+    <methodId>631</methodId>
+    <paramName>arg[0]</paramName>
+    <paramType>int</paramType>
+  </homework01.po.ParamInfo>
+</object-stream>
+<object-stream>
+  <homework01.po.ParamInfo>
+    <paramId>919</paramId>
+    <methodId>632</methodId>
+    <paramName>arg[0]</paramName>
+    <paramType>long</paramType>
+  </homework01.po.ParamInfo>
+</object-stream>
+<object-stream>
+  <homework01.po.ParamInfo>
+    <paramId>920</paramId>
+    <methodId>633</methodId>
+    <paramName>arg[0]</paramName>
+    <paramType>float</paramType>
+  </homework01.po.ParamInfo>
+</object-stream>
+<object-stream>
+  <homework01.po.ParamInfo>
+    <paramId>921</paramId>
+    <methodId>634</methodId>
+    <paramName>arg[0]</paramName>
+    <paramType>boolean</paramType>
+  </homework01.po.ParamInfo>
+</object-stream>
+<object-stream>
+  <homework01.po.ParamInfo>
+    <paramId>922</paramId>
+    <methodId>635</methodId>
+    <paramName>arg[0]</paramName>
+    <paramType>char[]</paramType>
+  </homework01.po.ParamInfo>
+</object-stream>
+<object-stream>
+  <homework01.po.ParamInfo>
+    <paramId>923</paramId>
+    <methodId>636</methodId>
+    <paramName>arg[0]</paramName>
+    <paramType>char[]</paramType>
+  </homework01.po.ParamInfo>
+</object-stream>
+<object-stream>
+  <homework01.po.ParamInfo>
+    <paramId>924</paramId>
+    <methodId>636</methodId>
+    <paramName>arg[1]</paramName>
+    <paramType>int</paramType>
+  </homework01.po.ParamInfo>
+</object-stream>
+<object-stream>
+  <homework01.po.ParamInfo>
+    <paramId>925</paramId>
+    <methodId>636</methodId>
+    <paramName>arg[2]</paramName>
+    <paramType>int</paramType>
+  </homework01.po.ParamInfo>
+</object-stream>
+<object-stream>
+  <homework01.po.ParamInfo>
+    <paramId>926</paramId>
+    <methodId>637</methodId>
+    <paramName>arg[0]</paramName>
+    <paramType>java.lang.Object</paramType>
+  </homework01.po.ParamInfo>
+</object-stream>
+<object-stream>
+  <homework01.po.ParamInfo>
+    <paramId>927</paramId>
+    <methodId>638</methodId>
+    <paramName>arg[0]</paramName>
+    <paramType>char</paramType>
+  </homework01.po.ParamInfo>
+</object-stream>
+<object-stream>
+  <homework01.po.ParamInfo>
+    <paramId>928</paramId>
+    <methodId>639</methodId>
+    <paramName>arg[0]</paramName>
+    <paramType>double</paramType>
+  </homework01.po.ParamInfo>
+</object-stream>
+<object-stream>
+  <homework01.po.ParamInfo>
+    <paramId>929</paramId>
+    <methodId>640</methodId>
+    <paramName>arg[0]</paramName>
+    <paramType>int</paramType>
+  </homework01.po.ParamInfo>
+</object-stream>
+<object-stream>
+  <homework01.po.ParamInfo>
+    <paramId>930</paramId>
+    <methodId>641</methodId>
+    <paramName>arg[0]</paramName>
+    <paramType>byte[]</paramType>
+  </homework01.po.ParamInfo>
+</object-stream>
+<object-stream>
+  <homework01.po.ParamInfo>
+    <paramId>931</paramId>
+    <methodId>641</methodId>
+    <paramName>arg[1]</paramName>
+    <paramType>int</paramType>
+  </homework01.po.ParamInfo>
+</object-stream>
+<object-stream>
+  <homework01.po.ParamInfo>
+    <paramId>932</paramId>
+    <methodId>641</methodId>
+    <paramName>arg[2]</paramName>
+    <paramType>int</paramType>
+  </homework01.po.ParamInfo>
+</object-stream>
+<object-stream>
+  <homework01.po.ParamInfo>
+    <paramId>933</paramId>
+    <methodId>642</methodId>
+    <paramName>arg[0]</paramName>
+    <paramType>int</paramType>
+  </homework01.po.ParamInfo>
+</object-stream>
+<object-stream>
+  <homework01.po.ParamInfo>
+    <paramId>934</paramId>
+    <methodId>643</methodId>
+    <paramName>arg[0]</paramName>
+    <paramType>int</paramType>
+  </homework01.po.ParamInfo>
+</object-stream>
+<object-stream>
+  <homework01.po.ParamInfo>
+    <paramId>935</paramId>
+    <methodId>644</methodId>
+    <paramName>arg[0]</paramName>
+    <paramType>int</paramType>
+  </homework01.po.ParamInfo>
+</object-stream>
+<object-stream>
+  <homework01.po.ParamInfo>
+    <paramId>936</paramId>
+    <methodId>644</methodId>
+    <paramName>arg[1]</paramName>
+    <paramType>int</paramType>
+  </homework01.po.ParamInfo>
+</object-stream>
+<object-stream>
+  <homework01.po.ParamInfo>
+    <paramId>937</paramId>
+    <methodId>645</methodId>
+    <paramName>arg[0]</paramName>
+    <paramType>java.lang.String</paramType>
+  </homework01.po.ParamInfo>
+</object-stream>
+<object-stream>
+  <homework01.po.ParamInfo>
+    <paramId>938</paramId>
+    <methodId>646</methodId>
+    <paramName>arg[0]</paramName>
+    <paramType>java.lang.String</paramType>
+  </homework01.po.ParamInfo>
+</object-stream>
+<object-stream>
+  <homework01.po.ParamInfo>
+    <paramId>939</paramId>
+    <methodId>647</methodId>
+    <paramName>arg[0]</paramName>
+    <paramType>java.lang.CharSequence</paramType>
+  </homework01.po.ParamInfo>
+</object-stream>
+<object-stream>
+  <homework01.po.ParamInfo>
+    <paramId>940</paramId>
+    <methodId>648</methodId>
+    <paramName>arg[0]</paramName>
+    <paramType>java.lang.CharSequence</paramType>
+  </homework01.po.ParamInfo>
+</object-stream>
+<object-stream>
+  <homework01.po.ParamInfo>
+    <paramId>941</paramId>
+    <methodId>649</methodId>
+    <paramName>arg[0]</paramName>
+    <paramType>java.lang.StringBuffer</paramType>
+  </homework01.po.ParamInfo>
+</object-stream>
+<object-stream>
+  <homework01.po.ParamInfo>
+    <paramId>942</paramId>
+    <methodId>650</methodId>
+    <paramName>arg[0]</paramName>
+    <paramType>char[]</paramType>
+  </homework01.po.ParamInfo>
+</object-stream>
+<object-stream>
+  <homework01.po.ParamInfo>
+    <paramId>943</paramId>
+    <methodId>651</methodId>
+    <paramName>arg[0]</paramName>
+    <paramType>char[]</paramType>
+  </homework01.po.ParamInfo>
+</object-stream>
+<object-stream>
+  <homework01.po.ParamInfo>
+    <paramId>944</paramId>
+    <methodId>651</methodId>
+    <paramName>arg[1]</paramName>
+    <paramType>int</paramType>
+  </homework01.po.ParamInfo>
+</object-stream>
+<object-stream>
+  <homework01.po.ParamInfo>
+    <paramId>945</paramId>
+    <methodId>651</methodId>
+    <paramName>arg[2]</paramName>
+    <paramType>int</paramType>
+  </homework01.po.ParamInfo>
+</object-stream>
+<object-stream>
+  <homework01.po.ParamInfo>
+    <paramId>946</paramId>
+    <methodId>652</methodId>
+    <paramName>arg[0]</paramName>
+    <paramType>java.lang.String</paramType>
+  </homework01.po.ParamInfo>
+</object-stream>
+<object-stream>
+  <homework01.po.ParamInfo>
+    <paramId>947</paramId>
+    <methodId>653</methodId>
+    <paramName>arg[0]</paramName>
+    <paramType>java.lang.String</paramType>
+  </homework01.po.ParamInfo>
+</object-stream>
+<object-stream>
+  <homework01.po.ParamInfo>
+    <paramId>948</paramId>
+    <methodId>654</methodId>
+    <paramName>arg[0]</paramName>
+    <paramType>java.util.Locale</paramType>
+  </homework01.po.ParamInfo>
+</object-stream>
+<object-stream>
+  <homework01.po.ParamInfo>
+    <paramId>949</paramId>
+    <methodId>654</methodId>
+    <paramName>arg[1]</paramName>
+    <paramType>java.lang.String</paramType>
+  </homework01.po.ParamInfo>
+</object-stream>
+<object-stream>
+  <homework01.po.ParamInfo>
+    <paramId>950</paramId>
+    <methodId>654</methodId>
+    <paramName>arg[2]</paramName>
+    <paramType>java.lang.Object[]</paramType>
+  </homework01.po.ParamInfo>
+</object-stream>
+<object-stream>
+  <homework01.po.ParamInfo>
+    <paramId>951</paramId>
+    <methodId>655</methodId>
+    <paramName>arg[0]</paramName>
+    <paramType>java.lang.String</paramType>
+  </homework01.po.ParamInfo>
+</object-stream>
+<object-stream>
+  <homework01.po.ParamInfo>
+    <paramId>952</paramId>
+    <methodId>655</methodId>
+    <paramName>arg[1]</paramName>
+    <paramType>java.lang.Object[]</paramType>
+  </homework01.po.ParamInfo>
+</object-stream>
+<object-stream>
+  <homework01.po.ParamInfo>
+    <paramId>953</paramId>
+    <methodId>656</methodId>
+    <paramName>arg[0]</paramName>
+    <paramType>int</paramType>
+  </homework01.po.ParamInfo>
+</object-stream>
+<object-stream>
+  <homework01.po.ParamInfo>
+    <paramId>954</paramId>
+    <methodId>656</methodId>
+    <paramName>arg[1]</paramName>
+    <paramType>int</paramType>
+  </homework01.po.ParamInfo>
+</object-stream>
+<object-stream>
+  <homework01.po.ParamInfo>
+    <paramId>955</paramId>
+    <methodId>656</methodId>
+    <paramName>arg[2]</paramName>
+    <paramType>byte[]</paramType>
+  </homework01.po.ParamInfo>
+</object-stream>
+<object-stream>
+  <homework01.po.ParamInfo>
+    <paramId>956</paramId>
+    <methodId>656</methodId>
+    <paramName>arg[3]</paramName>
+    <paramType>int</paramType>
+  </homework01.po.ParamInfo>
+</object-stream>
+<object-stream>
+  <homework01.po.ParamInfo>
+    <paramId>957</paramId>
+    <methodId>657</methodId>
+    <paramName>arg[0]</paramName>
+    <paramType>java.nio.charset.Charset</paramType>
+  </homework01.po.ParamInfo>
+</object-stream>
+<object-stream>
+  <homework01.po.ParamInfo>
+    <paramId>958</paramId>
+    <methodId>658</methodId>
+    <paramName>arg[0]</paramName>
+    <paramType>java.lang.String</paramType>
+  </homework01.po.ParamInfo>
+</object-stream>
+<object-stream>
+  <homework01.po.ParamInfo>
+    <paramId>959</paramId>
+    <methodId>660</methodId>
+    <paramName>arg[0]</paramName>
+    <paramType>int</paramType>
+  </homework01.po.ParamInfo>
+</object-stream>
+<object-stream>
+  <homework01.po.ParamInfo>
+    <paramId>960</paramId>
+    <methodId>660</methodId>
+    <paramName>arg[1]</paramName>
+    <paramType>int</paramType>
+  </homework01.po.ParamInfo>
+</object-stream>
+<object-stream>
+  <homework01.po.ParamInfo>
+    <paramId>961</paramId>
+    <methodId>660</methodId>
+    <paramName>arg[2]</paramName>
+    <paramType>char[]</paramType>
+  </homework01.po.ParamInfo>
+</object-stream>
+<object-stream>
+  <homework01.po.ParamInfo>
+    <paramId>962</paramId>
+    <methodId>660</methodId>
+    <paramName>arg[3]</paramName>
+    <paramType>int</paramType>
+  </homework01.po.ParamInfo>
+</object-stream>
+<object-stream>
+  <homework01.po.ParamInfo>
+    <paramId>963</paramId>
+    <methodId>661</methodId>
+    <paramName>arg[0]</paramName>
+    <paramType>char[]</paramType>
+  </homework01.po.ParamInfo>
+</object-stream>
+<object-stream>
+  <homework01.po.ParamInfo>
+    <paramId>964</paramId>
+    <methodId>661</methodId>
+    <paramName>arg[1]</paramName>
+    <paramType>int</paramType>
+  </homework01.po.ParamInfo>
+</object-stream>
+<object-stream>
+  <homework01.po.ParamInfo>
+    <paramId>965</paramId>
+    <methodId>662</methodId>
+    <paramName>arg[0]</paramName>
+    <paramType>int</paramType>
+  </homework01.po.ParamInfo>
+</object-stream>
+<object-stream>
+  <homework01.po.ParamInfo>
+    <paramId>966</paramId>
+    <methodId>662</methodId>
+    <paramName>arg[1]</paramName>
+    <paramType>int</paramType>
+  </homework01.po.ParamInfo>
+</object-stream>
+<object-stream>
+  <homework01.po.ParamInfo>
+    <paramId>967</paramId>
+    <methodId>665</methodId>
+    <paramName>arg[0]</paramName>
+    <paramType>java.lang.CharSequence</paramType>
+  </homework01.po.ParamInfo>
+</object-stream>
+<object-stream>
+  <homework01.po.ParamInfo>
+    <paramId>968</paramId>
+    <methodId>665</methodId>
+    <paramName>arg[1]</paramName>
+    <paramType>java.lang.CharSequence[]</paramType>
+  </homework01.po.ParamInfo>
+</object-stream>
+<object-stream>
+  <homework01.po.ParamInfo>
+    <paramId>969</paramId>
+    <methodId>666</methodId>
+    <paramName>arg[0]</paramName>
+    <paramType>java.lang.CharSequence</paramType>
+  </homework01.po.ParamInfo>
+</object-stream>
+<object-stream>
+  <homework01.po.ParamInfo>
+    <paramId>970</paramId>
+    <methodId>666</methodId>
+    <paramName>arg[1]</paramName>
+    <paramType>java.lang.Iterable</paramType>
+  </homework01.po.ParamInfo>
+</object-stream>
+<object-stream>
+  <homework01.po.ParamInfo>
+    <paramId>971</paramId>
+    <methodId>667</methodId>
+    <paramName>arg[0]</paramName>
+    <paramType>int</paramType>
+  </homework01.po.ParamInfo>
+</object-stream>
+<object-stream>
+  <homework01.po.ParamInfo>
+    <paramId>972</paramId>
+    <methodId>668</methodId>
+    <paramName>arg[0]</paramName>
+    <paramType>java.lang.String</paramType>
+  </homework01.po.ParamInfo>
+</object-stream>
+<object-stream>
+  <homework01.po.ParamInfo>
+    <paramId>973</paramId>
+    <methodId>669</methodId>
+    <paramName>arg[0]</paramName>
+    <paramType>char[]</paramType>
+  </homework01.po.ParamInfo>
+</object-stream>
+<object-stream>
+  <homework01.po.ParamInfo>
+    <paramId>974</paramId>
+    <methodId>669</methodId>
+    <paramName>arg[1]</paramName>
+    <paramType>int</paramType>
+  </homework01.po.ParamInfo>
+</object-stream>
+<object-stream>
+  <homework01.po.ParamInfo>
+    <paramId>975</paramId>
+    <methodId>669</methodId>
+    <paramName>arg[2]</paramName>
+    <paramType>int</paramType>
+  </homework01.po.ParamInfo>
+</object-stream>
+<object-stream>
+  <homework01.po.ParamInfo>
+    <paramId>976</paramId>
+    <methodId>669</methodId>
+    <paramName>arg[3]</paramName>
+    <paramType>java.lang.String</paramType>
+  </homework01.po.ParamInfo>
+</object-stream>
+<object-stream>
+  <homework01.po.ParamInfo>
+    <paramId>977</paramId>
+    <methodId>669</methodId>
+    <paramName>arg[4]</paramName>
+    <paramType>int</paramType>
+  </homework01.po.ParamInfo>
+</object-stream>
+<object-stream>
+  <homework01.po.ParamInfo>
+    <paramId>978</paramId>
+    <methodId>670</methodId>
+    <paramName>arg[0]</paramName>
+    <paramType>java.lang.String</paramType>
+  </homework01.po.ParamInfo>
+</object-stream>
+<object-stream>
+  <homework01.po.ParamInfo>
+    <paramId>979</paramId>
+    <methodId>670</methodId>
+    <paramName>arg[1]</paramName>
+    <paramType>int</paramType>
+  </homework01.po.ParamInfo>
+</object-stream>
+<object-stream>
+  <homework01.po.ParamInfo>
+    <paramId>980</paramId>
+    <methodId>671</methodId>
+    <paramName>arg[0]</paramName>
+    <paramType>int</paramType>
+  </homework01.po.ParamInfo>
+</object-stream>
+<object-stream>
+  <homework01.po.ParamInfo>
+    <paramId>981</paramId>
+    <methodId>671</methodId>
+    <paramName>arg[1]</paramName>
+    <paramType>int</paramType>
+  </homework01.po.ParamInfo>
+</object-stream>
+<object-stream>
+  <homework01.po.ParamInfo>
+    <paramId>982</paramId>
+    <methodId>672</methodId>
+    <paramName>arg[0]</paramName>
+    <paramType>char[]</paramType>
+  </homework01.po.ParamInfo>
+</object-stream>
+<object-stream>
+  <homework01.po.ParamInfo>
+    <paramId>983</paramId>
+    <methodId>672</methodId>
+    <paramName>arg[1]</paramName>
+    <paramType>int</paramType>
+  </homework01.po.ParamInfo>
+</object-stream>
+<object-stream>
+  <homework01.po.ParamInfo>
+    <paramId>984</paramId>
+    <methodId>672</methodId>
+    <paramName>arg[2]</paramName>
+    <paramType>int</paramType>
+  </homework01.po.ParamInfo>
+</object-stream>
+<object-stream>
+  <homework01.po.ParamInfo>
+    <paramId>985</paramId>
+    <methodId>672</methodId>
+    <paramName>arg[3]</paramName>
+    <paramType>char[]</paramType>
+  </homework01.po.ParamInfo>
+</object-stream>
+<object-stream>
+  <homework01.po.ParamInfo>
+    <paramId>986</paramId>
+    <methodId>672</methodId>
+    <paramName>arg[4]</paramName>
+    <paramType>int</paramType>
+  </homework01.po.ParamInfo>
+</object-stream>
+<object-stream>
+  <homework01.po.ParamInfo>
+    <paramId>987</paramId>
+    <methodId>672</methodId>
+    <paramName>arg[5]</paramName>
+    <paramType>int</paramType>
+  </homework01.po.ParamInfo>
+</object-stream>
+<object-stream>
+  <homework01.po.ParamInfo>
+    <paramId>988</paramId>
+    <methodId>672</methodId>
+    <paramName>arg[6]</paramName>
+    <paramType>int</paramType>
+  </homework01.po.ParamInfo>
+</object-stream>
+<object-stream>
+  <homework01.po.ParamInfo>
+    <paramId>989</paramId>
+    <methodId>673</methodId>
+    <paramName>arg[0]</paramName>
+    <paramType>int</paramType>
+  </homework01.po.ParamInfo>
+</object-stream>
+<object-stream>
+  <homework01.po.ParamInfo>
+    <paramId>990</paramId>
+    <methodId>673</methodId>
+    <paramName>arg[1]</paramName>
+    <paramType>int</paramType>
+  </homework01.po.ParamInfo>
+</object-stream>
+<object-stream>
+  <homework01.po.ParamInfo>
+    <paramId>991</paramId>
+    <methodId>675</methodId>
+    <paramName>arg[0]</paramName>
+    <paramType>java.lang.String</paramType>
+  </homework01.po.ParamInfo>
+</object-stream>
+<object-stream>
+  <homework01.po.ParamInfo>
+    <paramId>992</paramId>
+    <methodId>676</methodId>
+    <paramName>arg[0]</paramName>
+    <paramType>java.lang.AbstractStringBuilder</paramType>
+  </homework01.po.ParamInfo>
+</object-stream>
+<object-stream>
+  <homework01.po.ParamInfo>
+    <paramId>993</paramId>
+    <methodId>677</methodId>
+    <paramName>arg[0]</paramName>
+    <paramType>int</paramType>
+  </homework01.po.ParamInfo>
+</object-stream>
+<object-stream>
+  <homework01.po.ParamInfo>
+    <paramId>994</paramId>
+    <methodId>677</methodId>
+    <paramName>arg[1]</paramName>
+    <paramType>int</paramType>
+  </homework01.po.ParamInfo>
+</object-stream>
+<object-stream>
+  <homework01.po.ParamInfo>
+    <paramId>995</paramId>
+    <methodId>678</methodId>
+    <paramName>arg[0]</paramName>
+    <paramType>int</paramType>
+  </homework01.po.ParamInfo>
+</object-stream>
+<object-stream>
+  <homework01.po.ParamInfo>
+    <paramId>996</paramId>
+    <methodId>678</methodId>
+    <paramName>arg[1]</paramName>
+    <paramType>java.lang.String</paramType>
+  </homework01.po.ParamInfo>
+</object-stream>
+<object-stream>
+  <homework01.po.ParamInfo>
+    <paramId>997</paramId>
+    <methodId>678</methodId>
+    <paramName>arg[2]</paramName>
+    <paramType>int</paramType>
+  </homework01.po.ParamInfo>
+</object-stream>
+<object-stream>
+  <homework01.po.ParamInfo>
+    <paramId>998</paramId>
+    <methodId>678</methodId>
+    <paramName>arg[3]</paramName>
+    <paramType>int</paramType>
+  </homework01.po.ParamInfo>
+</object-stream>
+<object-stream>
+  <homework01.po.ParamInfo>
+    <paramId>999</paramId>
+    <methodId>679</methodId>
+    <paramName>arg[0]</paramName>
+    <paramType>boolean</paramType>
+  </homework01.po.ParamInfo>
+</object-stream>
+<object-stream>
+  <homework01.po.ParamInfo>
+    <paramId>1000</paramId>
+    <methodId>679</methodId>
+    <paramName>arg[1]</paramName>
+    <paramType>int</paramType>
+  </homework01.po.ParamInfo>
+</object-stream>
+<object-stream>
+  <homework01.po.ParamInfo>
+    <paramId>1001</paramId>
+    <methodId>679</methodId>
+    <paramName>arg[2]</paramName>
+    <paramType>java.lang.String</paramType>
+  </homework01.po.ParamInfo>
+</object-stream>
+<object-stream>
+  <homework01.po.ParamInfo>
+    <paramId>1002</paramId>
+    <methodId>679</methodId>
+    <paramName>arg[3]</paramName>
+    <paramType>int</paramType>
+  </homework01.po.ParamInfo>
+</object-stream>
+<object-stream>
+  <homework01.po.ParamInfo>
+    <paramId>1003</paramId>
+    <methodId>679</methodId>
+    <paramName>arg[4]</paramName>
+    <paramType>int</paramType>
+  </homework01.po.ParamInfo>
+</object-stream>
+<object-stream>
+  <homework01.po.ParamInfo>
+    <paramId>1004</paramId>
+    <methodId>680</methodId>
+    <paramName>arg[0]</paramName>
+    <paramType>char</paramType>
+  </homework01.po.ParamInfo>
+</object-stream>
+<object-stream>
+  <homework01.po.ParamInfo>
+    <paramId>1005</paramId>
+    <methodId>680</methodId>
+    <paramName>arg[1]</paramName>
+    <paramType>char</paramType>
+  </homework01.po.ParamInfo>
+</object-stream>
+<object-stream>
+  <homework01.po.ParamInfo>
+    <paramId>1006</paramId>
+    <methodId>681</methodId>
+    <paramName>arg[0]</paramName>
+    <paramType>java.lang.CharSequence</paramType>
+  </homework01.po.ParamInfo>
+</object-stream>
+<object-stream>
+  <homework01.po.ParamInfo>
+    <paramId>1007</paramId>
+    <methodId>681</methodId>
+    <paramName>arg[1]</paramName>
+    <paramType>java.lang.CharSequence</paramType>
+  </homework01.po.ParamInfo>
+</object-stream>
+<object-stream>
+  <homework01.po.ParamInfo>
+    <paramId>1008</paramId>
+    <methodId>682</methodId>
+    <paramName>arg[0]</paramName>
+    <paramType>java.lang.String</paramType>
+  </homework01.po.ParamInfo>
+</object-stream>
+<object-stream>
+  <homework01.po.ParamInfo>
+    <paramId>1009</paramId>
+    <methodId>682</methodId>
+    <paramName>arg[1]</paramName>
+    <paramType>java.lang.String</paramType>
+  </homework01.po.ParamInfo>
+</object-stream>
+<object-stream>
+  <homework01.po.ParamInfo>
+    <paramId>1010</paramId>
+    <methodId>683</methodId>
+    <paramName>arg[0]</paramName>
+    <paramType>java.lang.String</paramType>
+  </homework01.po.ParamInfo>
+</object-stream>
+<object-stream>
+  <homework01.po.ParamInfo>
+    <paramId>1011</paramId>
+    <methodId>683</methodId>
+    <paramName>arg[1]</paramName>
+    <paramType>java.lang.String</paramType>
+  </homework01.po.ParamInfo>
+</object-stream>
+<object-stream>
+  <homework01.po.ParamInfo>
+    <paramId>1012</paramId>
+    <methodId>684</methodId>
+    <paramName>arg[0]</paramName>
+    <paramType>java.lang.String</paramType>
+  </homework01.po.ParamInfo>
+</object-stream>
+<object-stream>
+  <homework01.po.ParamInfo>
+    <paramId>1013</paramId>
+    <methodId>685</methodId>
+    <paramName>arg[0]</paramName>
+    <paramType>java.lang.String</paramType>
+  </homework01.po.ParamInfo>
+</object-stream>
+<object-stream>
+  <homework01.po.ParamInfo>
+    <paramId>1014</paramId>
+    <methodId>685</methodId>
+    <paramName>arg[1]</paramName>
+    <paramType>int</paramType>
+  </homework01.po.ParamInfo>
+</object-stream>
+<object-stream>
+  <homework01.po.ParamInfo>
+    <paramId>1015</paramId>
+    <methodId>686</methodId>
+    <paramName>arg[0]</paramName>
+    <paramType>java.lang.String</paramType>
+  </homework01.po.ParamInfo>
+</object-stream>
+<object-stream>
+  <homework01.po.ParamInfo>
+    <paramId>1016</paramId>
+    <methodId>686</methodId>
+    <paramName>arg[1]</paramName>
+    <paramType>int</paramType>
+  </homework01.po.ParamInfo>
+</object-stream>
+<object-stream>
+  <homework01.po.ParamInfo>
+    <paramId>1017</paramId>
+    <methodId>687</methodId>
+    <paramName>arg[0]</paramName>
+    <paramType>java.lang.String</paramType>
+  </homework01.po.ParamInfo>
+</object-stream>
+<object-stream>
+  <homework01.po.ParamInfo>
+    <paramId>1018</paramId>
+    <methodId>688</methodId>
+    <paramName>arg[0]</paramName>
+    <paramType>int</paramType>
+  </homework01.po.ParamInfo>
+</object-stream>
+<object-stream>
+  <homework01.po.ParamInfo>
+    <paramId>1019</paramId>
+    <methodId>688</methodId>
+    <paramName>arg[1]</paramName>
+    <paramType>int</paramType>
+  </homework01.po.ParamInfo>
+</object-stream>
+<object-stream>
+  <homework01.po.ParamInfo>
+    <paramId>1020</paramId>
+    <methodId>689</methodId>
+    <paramName>arg[0]</paramName>
+    <paramType>int</paramType>
+  </homework01.po.ParamInfo>
+</object-stream>
+<object-stream>
+  <homework01.po.ParamInfo>
+    <paramId>1021</paramId>
+    <methodId>690</methodId>
+    <paramName>arg[0]</paramName>
+    <paramType>int</paramType>
+  </homework01.po.ParamInfo>
+</object-stream>
+<object-stream>
+  <homework01.po.ParamInfo>
+    <paramId>1022</paramId>
+    <methodId>690</methodId>
+    <paramName>arg[1]</paramName>
+    <paramType>int</paramType>
+  </homework01.po.ParamInfo>
+</object-stream>
+<object-stream>
+  <homework01.po.ParamInfo>
+    <paramId>1023</paramId>
+    <methodId>692</methodId>
+    <paramName>arg[0]</paramName>
+    <paramType>java.util.Locale</paramType>
+  </homework01.po.ParamInfo>
+</object-stream>
+<object-stream>
+  <homework01.po.ParamInfo>
+    <paramId>1024</paramId>
+    <methodId>695</methodId>
+    <paramName>arg[0]</paramName>
+    <paramType>java.util.Locale</paramType>
+  </homework01.po.ParamInfo>
+</object-stream>
