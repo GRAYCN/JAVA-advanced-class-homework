@@ -9,6 +9,7 @@ import org.springframework.jdbc.core.BeanPropertyRowMapper;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.stereotype.Repository;
 
+import wgh.util.DbUtils;
 import wgh.model.BookInfo;
 
 @Repository
@@ -40,4 +41,18 @@ public class BookInfoDao {
 			return null;
 	}
 
+	public Integer countRows(){
+		String sql = "select count(*) as countRows from BookInfo ";
+		int rs = jdbcTemplate.queryForObject(sql,Integer.class);
+		return rs;
+	}
+	
+	public BookInfo[] findPagedBookinfosByPageindex(int pageIndex){
+		String sql = "select top " + DbUtils.PAGE_SIZE + " * from BookInfo where bookId not in";
+		String subSql = " (select top " + pageIndex * DbUtils.PAGE_SIZE + " bookId from BookInfo order by bookId)";
+		sql = sql + subSql + " order by bookId ";
+		List<BookInfo> objs = jdbcTemplate.query(sql, BeanPropertyRowMapper.newInstance(BookInfo.class));
+		return objs.toArray(new BookInfo[0]);
+	}
+	
 }

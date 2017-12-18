@@ -1,3 +1,4 @@
+
 package wgh.util;
 
 import java.sql.*;
@@ -8,8 +9,8 @@ public class DbUtils {
 	public final static int PAGE_SIZE=2;
 	
 
-	private static String USERID = "test";
-	private static String UERPASSWORD = "test123$%^";
+	private static String USERID = "sa";
+	private static String UERPASSWORD = "123456";
 
 	// 禁止实例对象
 	private DbUtils() {
