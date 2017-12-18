@@ -1,56 +1,125 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<script src="js/jquery-1.9.1.min.js" type="text/javascript"></script>
-<link href="bootstrap3.3.4/css/bootstrap.min.css" rel="stylesheet">
-<script src="bootstrap3.3.4/js/bootstrap.min.js" type="text/javascript"></script>
-<script src="layer/layer.js" type="text/javascript"></script>
-<script src="bootstrap-number-input.js"></script>
+    <meta charset="UTF-8">
+    <script src="js/jquery-1.9.1.min.js" type="text/javascript"></script>
+    <link href="bootstrap3.3.4/css/bootstrap.min.css" rel="stylesheet">
+    <script src="bootstrap3.3.4/js/bootstrap.min.js" type="text/javascript"></script>
+    <script src="layer/layer.js" type="text/javascript"></script>
+    <script src="bootstrap-number-input.js"></script>
 
-<style>
-#dis {
-	color: red;
-}
-</style>
+    <style>
+        #dis {
+            color: red;
+        }
+    </style>
 </head>
 <body onload="init()">
 
 
-	<script>
+<script>
     $('#after').bootstrapNumber();
 
     function init() {
-        fillbooksTable();
+        fillBooksTable();
         fillCartTable();
     }
 
-    function fillbooksTable() {
-        //使用jQuery发起AJAX Get请求
-        $.get("bookList.jsp", function (result) {
-
-            //1-将AJAX请求返回的JSON字符串Book对象数组
-            var books = JSON.parse(result);
-            //2-通过DOM访问商品列表Table
-            var table = document.getElementById("booksTable");
-            //3-逐个访问商品信息，生成商品列表
-            for (var index in books) {
-                var newRow = table.insertRow(table.rows.length);
-                var col1 = newRow.insertCell(0);
-                var col2 = newRow.insertCell(1);
-                var col3 = newRow.insertCell(2);
-                var col4 = newRow.insertCell(3);
-                var col5 = newRow.insertCell(4);
-                col1.innerHTML = books[index].bookId;
-                col2.innerHTML = books[index].bookName;
-                col3.innerHTML = books[index].bookPrice;
-                col4.innerHTML = books[index].publishDate;
-                col5.innerHTML = "<a href='#' onclick='addToCart(\""
-                    + books[index].bookId + "\");' >选择</a>";
-            }
-        });
+    //清空图书列表
+    function clearBooksTable() {
+        var table = document.getElementById("booksTable");
+        while (table.rows.length > 1)
+            table.deleteRow(1);
     }
 
+    function fillBooksTable() {
+        var url = "bookListPaged.jsp";          //定义一个独立于bookList.jsp以供测试使用
+        var queryPage = $("#lblRequet").text();
+        if (queryPage == null || queryPage == "" || queryPage == "0") {
+            queryPage = 1;
+            $("#lblRequet").text(queryPage);
+        }
+        url = url + "?pageIndex=" + (queryPage - 1);
+
+        //使用jQuery发起AJAX Get请求
+        $.ajax({
+                type: "get",
+                url: url,
+                async: false,
+                success: function (result) {
+                    clearBooksTable();					//清空图书列表
+                    //1-将AJAX请求返回的JSON字符串Book对象数组
+                    var books = JSON.parse(result);
+                    //2-通过DOM访问商品列表Table
+                    var table = document.getElementById("booksTable");
+                    //3-逐个访问商品信息，生成商品列表
+                    for (var index in books) {
+                        var newRow = table.insertRow(table.rows.length);
+                        var col1 = newRow.insertCell(0);
+                        var col2 = newRow.insertCell(1);
+                        var col3 = newRow.insertCell(2);
+                        var col4 = newRow.insertCell(3);
+                        var col5 = newRow.insertCell(4);
+                        col1.innerHTML = books[index].bookId;
+                        col2.innerHTML = books[index].bookName;
+                        col3.innerHTML = books[index].bookPrice;
+                        col4.innerHTML = books[index].publishDate;
+                        col5.innerHTML = "<a href='#' onclick='addToCart(\""
+                            + books[index].bookId + "\");' >选择</a>";
+                    }
+                }
+            }
+        );
+        //更新分页Form
+        updatePageForm();
+    }
+
+    function updatePageForm() {
+        //1-计算总行数Servlet
+        var url = "countBooks.jsp";
+//2-加上图书名称查询条件
+//3-发送计算总行数请求
+        $.ajax({
+            type: "get",
+            url: url,
+            async: false,
+            success: function (result) {
+                updatePageFormReturn(result);
+            }
+        })
+    }
+
+    function updatePageFormReturn(result) {
+        var rowCount=new Number(result);
+//        var pageCount=Math.ceil(rowCount/2);
+        var pageCount=Math.ceil(rowCount/2);
+        if (pageCount==0)
+            pageCount=1;
+        $("#lblTotal").text(pageCount);
+        var requestPage=$("#lblRequet").text();
+        if(requestPage>pageCount)
+            $("#lblRequet").text(pageCount);
+    }
+
+    function preRow(){
+        var requestPage=new Number($("#lblRequet").text());
+        if(requestPage<=1)
+            return;
+        requestPage=requestPage-1;
+        $("#lblRequet").text(requestPage);
+        fillBooksTable();
+    }
+
+    function nextRow(){
+        var requestPage=new Number($("#lblRequet").text());
+        var totalPage=new Number($("#lblTotal").text());
+        if(requestPage>=totalPage)
+            return;
+        requestPage=requestPage+1;
+        $("#lblRequet").text(requestPage);
+        fillBooksTable();
+    }
+    
     //加载购物车信息
     function loadCart(result) {
         clearShoppingTable();
@@ -83,10 +152,10 @@
             col2.innerHTML = bookInfo.bookName;
             col3.innerHTML = bookInfo.bookPrice;
 //            col4.innerHTML = "<input id='"+ cartList[index].bookId +"' class='form-control'  type='number' name='someid' onchange=changeCart('" + cartList[index].bookId + "'); value='" + cartList[index].orderQuantity + "' min='0'  />"
-            col4.innerHTML ="<div class=\"input-group\">"
-                +"<span class='input-group-addon' onclick=sub('" + cartList[index].bookId + "') ><strong>-</strong></span>"
-            +"<input id='"+ cartList[index].bookId +"'  class='form-control' readonly type='number' name='someid' value='" + cartList[index].orderQuantity + "' min='0'  />"
-            +"<span class='input-group-addon' onclick=add('" + cartList[index].bookId + "') ><strong>+</strong></span>";
+            col4.innerHTML = "<div class=\"input-group\">"
+                + "<span class='input-group-addon' onclick=sub('" + cartList[index].bookId + "') ><strong>-</strong></span>"
+                + "<input id='" + cartList[index].bookId + "'  class='form-control' readonly type='number' name='someid' value='" + cartList[index].orderQuantity + "' min='0'  />"
+                + "<span class='input-group-addon' onclick=add('" + cartList[index].bookId + "') ><strong>+</strong></span>";
             +" </div>";
 
             col5.innerHTML = bookInfo.bookPrice
@@ -106,14 +175,14 @@
     }
 
     function add(id) {
-        var num =  $("#"+id).val();
-        $("#"+id).val(++num);
+        var num = $("#" + id).val();
+        $("#" + id).val(++num);
         changeCart(id);
     }
 
     function sub(id) {
-        var num =  $("#"+id).val();
-        $("#"+id).val(--num);
+        var num = $("#" + id).val();
+        $("#" + id).val(--num);
         changeCart(id);
     }
 
@@ -123,7 +192,7 @@
             type: "get",
             url: "cartList.jsp",
             success: function (result) {
-               loadCart(result);
+                loadCart(result);
             }
         })
     }
@@ -149,6 +218,7 @@
         $("#realMoney").text(0);
     }
 
+
     /*
     添加商品到购物车的开发思路:
     1. 需要使用到的model是OrderDetail,开一个OrderDetail列表用于表示每一行的购物车信息
@@ -169,7 +239,6 @@
     }
 
 
-
     // 修改购物车,参数为 bookId, operation:操作id,操作分为三种:
     /*
     1:+1
@@ -178,7 +247,7 @@
     */
     function changeCart(bookId) {
 //        alert(bookId);
-        var orderQuantity = $("#"+bookId).val();
+        var orderQuantity = $("#" + bookId).val();
 //        alert(orderQuantity);
         $.ajax({
             type: "get",
@@ -213,8 +282,8 @@
         for (var i = 1, row; row = table.rows[i]; i++) {
             //iterate through rows
             //rows would be accessed using the "row" variable assigned in the for loop
-            console.log($("#"+row.cells[0].innerHTML).val())
-/*             orderQuantity: row.cells[3].getAttribute('value').innerHTML */
+            console.log($("#" + row.cells[0].innerHTML).val())
+            /*             orderQuantity: row.cells[3].getAttribute('value').innerHTML */
             //提交购物车中具体的商品项
             $.ajax({
                 type: "get",
@@ -224,7 +293,7 @@
                     orderId: parseInt(orderId),
                     bookId: row.cells[0].innerHTML,
 //                    orderQuantity: row.cells[3].innerHTML.value
-                    orderQuantity: $("#"+row.cells[0].innerHTML).val()
+                    orderQuantity: $("#" + row.cells[0].innerHTML).val()
                 },
                 async: false,
                 success: function (result) {
@@ -234,7 +303,7 @@
         }
 
         //清空购物车,删除cookie	
-       deleteShoppingTable();
+        deleteShoppingTable();
     }
 
     function deleteShoppingTable() {
@@ -256,65 +325,71 @@
             title: '历史交易记录',
             maxmin: true,
             shadeClose: true, //点击遮罩关闭层
-            area : ['800px' , '520px'],
+            area: ['800px', '520px'],
             content: 'history.html'
         });
     }
 
 </script>
 
-	<div class="container">
-		<table id="booksTable" class="table table-bordered table-hover">
-			<caption>图书列表</caption>
-			<thead>
-				<tr bgcolor="#ff8c00">
-					<th>编号</th>
-					<th>图书</th>
-					<th>价格(元/份)</th>
-					<th>出版日期</th>
-					<th>操作</th>
-				</tr>
-			</thead>
-		</table>
-	</div>
+<div class="container">
+    <table id="booksTable" class="table table-bordered table-hover">
+        <caption>图书列表</caption>
+        <thead>
+        <tr bgcolor="#ff8c00">
+            <th>编号</th>
+            <th>图书</th>
+            <th>价格(元/份)</th>
+            <th>出版日期</th>
+            <th>操作</th>
+        </tr>
+        </thead>
+    </table>
+</div>
 
-	<hr>
+<form class="form-inline col-md-offset-2">
+    <a onclick="preRow();">上一页</a>
+    <a onclick="nextRow();">下一页</a>
+    总共<label id="lblTotal"></label>页
+    当前<label id="lblRequet"></label>页
+</form>
+<hr>
 
-	<div class="container">
-		<table id="cart" class="table table-bordered table-hover">
-			<caption>
-				购物车 <span id="dis">满50减3 满100减8</span>
-				<button class="btn-primary col-md-offset-8"
-					onclick=deleteShoppingTable()>清空</button>
-			</caption>
+<div class="container">
+    <table id="cart" class="table table-bordered table-hover">
+        <caption>
+            购物车 <span id="dis">满50减3 满100减8</span>
+            <button class="btn-primary col-md-offset-8"
+                    onclick=deleteShoppingTable()>清空
+            </button>
+        </caption>
 
-			<thead>
-				<tr bgcolor="#ff8c00">
-					<th>编号</th>
-					<th>名称</th>
-					<th>价格(元/份)</th>
-					<th>数量(份)</th>
-					<th>总价(份)</th>
-					<th>删除</th>
-				</tr>
-			</thead>
-		</table>
+        <thead>
+        <tr bgcolor="#ff8c00">
+            <th>编号</th>
+            <th>名称</th>
+            <th>价格(元/份)</th>
+            <th>数量(份)</th>
+            <th>总价(份)</th>
+            <th>删除</th>
+        </tr>
+        </thead>
+    </table>
+</div>
 
-	</div>
-	<hr>
+<hr>
 
-	<div class="col-md-offset-9">
-		总金额:<label id="totalMoney">0</label> 元 <br> 折扣:<label
-			id="discount">0</label> 元 <br> 实付金额:<label id="realMoney">0</label>
-		元 <br>
+<div class="col-md-offset-9">
+    总金额:<label id="totalMoney">0</label> 元 <br> 折扣:<label
+        id="discount">0</label> 元 <br> 实付金额:<label id="realMoney">0</label>
+    元 <br>
 
-		<!--<input type="text" id="totalMoney"> 元 折扣:-->
-		<!--<input type="text" id="discount">元 实付金额:-->
-		<!--<input type="text" id="realMoney">元-->
-		<button class="btn-success" onclick="submitCart();">提交</button>
-        <button onclick="showHistory();">历史记录</button>
-	</div>
-
+    <!--<input type="text" id="totalMoney"> 元 折扣:-->
+    <!--<input type="text" id="discount">元 实付金额:-->
+    <!--<input type="text" id="realMoney">元-->
+    <button class="btn-success" onclick="submitCart();">提交</button>
+    <button onclick="showHistory();">历史记录</button>
+</div>
 
 
 </body>
